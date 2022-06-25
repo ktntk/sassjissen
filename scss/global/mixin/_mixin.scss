@@ -1,0 +1,54 @@
+@use "../setting" as *;
+
+@mixin bodyText {
+  $body_font: 'Noto Serif',
+  serif;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: $cGray;
+}
+
+@mixin navline {
+  border-right: solid 3px $cBluLight;
+}
+
+@mixin section {
+  margin: 10% 0;
+  position: relative;
+}
+
+@mixin sectionttl {
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+
+@mixin sectionline {
+  border-left: solid 8px $cBluLight;
+  padding-right: 10px;
+}
+
+@mixin sectionList {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin footerNav {
+  padding-right: 2.5%;
+  margin-right: 2.5%;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@mixin footerSNS {
+  margin-bottom: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin SNSIcon {
+  color: $cWhi;
+  font-size: 2.25rem;
+}
